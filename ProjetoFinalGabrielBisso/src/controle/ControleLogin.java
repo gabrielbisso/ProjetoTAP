@@ -18,11 +18,11 @@ public class ControleLogin implements ActionListener{
 		this.JanelaLog = JanelaLogin;
 		this.Log = Login;
 		LogDAO = new LoginDAO();
-		funcionaBotao();
+		Ativacaodosbototes();
 	}
 
 
-	private void funcionaBotao(){
+	private void Ativacaodosbototes(){
 		JanelaLog.getButtonAutenticar().addActionListener(this);
 		JanelaLog.getButtonLimpar().addActionListener(this);
 	}
