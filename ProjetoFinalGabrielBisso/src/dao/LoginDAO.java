@@ -10,11 +10,11 @@ import modelo.Login;
 
 
 public class LoginDAO {
-	File arq;
+	File Arquivo;
 
 	public LoginDAO()
 	{
-		arq = new File("ProjetoFinalGabrielBisso/senhas.txt");
+		Arquivo = new File("ProjetoFinalGabrielBisso/senhas.txt");
 	}
 	
 	public boolean autentica(Login l)
@@ -22,7 +22,7 @@ public class LoginDAO {
 		boolean resp = false;
 		
 		try {
-			FileReader fr = new FileReader(arq);
+			FileReader fr = new FileReader(Arquivo);
 			BufferedReader br = new BufferedReader(fr);
 			
 			String linha = null;
