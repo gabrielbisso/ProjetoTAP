@@ -42,13 +42,13 @@ public class LoginDAO {
 					}
 					
 				}
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			} 
+			catch (IOException e) {
 				e.printStackTrace();
 			}
 			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+		} 
+		catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 		return verificador;
