@@ -24,9 +24,6 @@ public class JanelaLogin extends JFrame {
 	private JButton buttonAutenticar;
 	private JButton buttonLimpar;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -40,9 +37,6 @@ public class JanelaLogin extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public JanelaLogin() {
 		setTitle("Tela Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -122,5 +116,4 @@ public class JanelaLogin extends JFrame {
 		fieldUsuario.setText(null);
 		fieldSenha.setText(null);
 	}
-
 }
