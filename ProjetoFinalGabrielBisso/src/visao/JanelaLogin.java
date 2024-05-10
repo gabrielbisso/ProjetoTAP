@@ -38,7 +38,7 @@ public class JanelaLogin extends JFrame {
 	}
 
 	public JanelaLogin() {
-		setTitle("Tela Login");
+		setTitle("Tela De Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 321, 252);
 		contentPane = new JPanel();
