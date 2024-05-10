@@ -19,7 +19,7 @@ public class LoginDAO {
 	
 	public boolean autentica(Login Login)
 	{
-		boolean resp = false;
+		boolean verificador = false;
 		
 		try {
 			FileReader fr = new FileReader(Arquivo);
@@ -36,7 +36,7 @@ public class LoginDAO {
 					{
 						if(campos[1].equals(Login.getSenha()))
 						{
-							resp=true;
+							verificador = true;
 							break;
 						}
 					}
@@ -51,6 +51,6 @@ public class LoginDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return resp;
+		return verificador;
 	}
 }
