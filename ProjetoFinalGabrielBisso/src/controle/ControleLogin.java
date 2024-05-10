@@ -12,12 +12,12 @@ import visao.JanelaLogin;
 public class ControleLogin implements ActionListener{
 	private JanelaLogin JanelaLog;
 	private Login Log;
-	private LoginDAO logdao;
+	private LoginDAO LogDAO;
 	
 	public ControleLogin(JanelaLogin JanelaLogin, Login Login) {
 		this.JanelaLog = JanelaLogin;
 		this.Log = Login;
-		logdao = new LoginDAO();
+		LogDAO = new LoginDAO();
 		funcionaBotao();
 	}
 
@@ -55,7 +55,7 @@ public class ControleLogin implements ActionListener{
 					}
 					else
 					{
-						if(logdao.autentica(Log))
+						if(LogDAO.autentica(Log))
 						{
 							JOptionPane.showMessageDialog(JanelaLog, "Autenticação realizada com sucesso!");
 						}
