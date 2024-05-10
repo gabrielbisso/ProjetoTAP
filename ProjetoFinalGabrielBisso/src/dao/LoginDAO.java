@@ -17,7 +17,7 @@ public class LoginDAO {
 		Arquivo = new File("ProjetoFinalGabrielBisso/senhas.txt");
 	}
 	
-	public boolean autentica(Login l)
+	public boolean autentica(Login Login)
 	{
 		boolean resp = false;
 		
@@ -32,9 +32,9 @@ public class LoginDAO {
 				while((linha = br.readLine())!=null)
 				{
 					campos = linha.split("#");
-					if(campos[0].equals(l.getUsuario()))
+					if(campos[0].equals(Login.getUsuario()))
 					{
-						if(campos[1].equals(l.getSenha()))
+						if(campos[1].equals(Login.getSenha()))
 						{
 							resp=true;
 							break;
