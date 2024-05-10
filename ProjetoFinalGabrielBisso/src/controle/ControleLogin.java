@@ -14,9 +14,9 @@ public class ControleLogin implements ActionListener{
 	private Login log;
 	private LoginDAO logdao;
 	
-	public ControleLogin(JanelaLogin jan, Login log) {
-		this.JanelaLog = jan;
-		this.log = log;
+	public ControleLogin(JanelaLogin JanelaLogin, Login Login) {
+		this.JanelaLog = JanelaLogin;
+		this.log = Login;
 		logdao = new LoginDAO();
 		funcionaBotao();
 	}
