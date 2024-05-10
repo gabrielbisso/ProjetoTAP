@@ -1,4 +1,4 @@
-package questao1;
+package controle;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
