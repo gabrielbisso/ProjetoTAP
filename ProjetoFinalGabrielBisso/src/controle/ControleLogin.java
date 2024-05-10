@@ -3,6 +3,10 @@ package controle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import dao.LoginDAO;
+import modelo.Login;
+import visao.JanelaLogin;
+
 public class ControleLogin implements ActionListener{
 	private JanelaLogin jan;
 	private Login log;
