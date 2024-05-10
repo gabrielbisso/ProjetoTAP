@@ -36,8 +36,9 @@ public class JanelaLogin extends JFrame {
 			}
 		});
 	}
-
+	    		
 	public JanelaLogin() {
+		
 		setTitle("Tela De Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 321, 252);
@@ -48,7 +49,7 @@ public class JanelaLogin extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.PINK);
+		panel.setBackground(Color.decode("#486623"));
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		contentPane.add(panel, BorderLayout.SOUTH);
 		
@@ -60,7 +61,7 @@ public class JanelaLogin extends JFrame {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panel_1.setBackground(Color.PINK);
+		panel_1.setBackground(Color.decode("#486623"));
 		contentPane.add(panel_1, BorderLayout.CENTER);
 		
 		JLabel labelUsuario = new JLabel("Usuário");
