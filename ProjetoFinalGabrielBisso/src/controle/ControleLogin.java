@@ -11,12 +11,12 @@ import visao.JanelaLogin;
 
 public class ControleLogin implements ActionListener{
 	private JanelaLogin JanelaLog;
-	private Login log;
+	private Login Log;
 	private LoginDAO logdao;
 	
 	public ControleLogin(JanelaLogin JanelaLogin, Login Login) {
 		this.JanelaLog = JanelaLogin;
-		this.log = Login;
+		this.Log = Login;
 		logdao = new LoginDAO();
 		funcionaBotao();
 	}
@@ -40,8 +40,8 @@ public class ControleLogin implements ActionListener{
 			{
 				String nome = JanelaLog.getFieldUsuario().getText();
 				String senha = JanelaLog.getFieldSenha().getText();
-				log.setUsuario(nome);
-				log.setSenha(senha);
+				Log.setUsuario(nome);
+				Log.setSenha(senha);
 				
 				if(nome.equals(" "))
 				{
@@ -55,7 +55,7 @@ public class ControleLogin implements ActionListener{
 					}
 					else
 					{
-						if(logdao.autentica(log))
+						if(logdao.autentica(Log))
 						{
 							JOptionPane.showMessageDialog(JanelaLog, "Autenticação realizada com sucesso!");
 						}
