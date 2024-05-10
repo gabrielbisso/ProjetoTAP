@@ -61,7 +61,7 @@ public class ControleLogin implements ActionListener{
 						}
 						else
 						{
-							System.out.println("Atenção: Erro na autenticação!");
+							JOptionPane.showMessageDialog(jan, "Atenção: Erro na autenticação!");
 						}
 					}
 				}
