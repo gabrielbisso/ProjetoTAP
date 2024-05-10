@@ -14,7 +14,7 @@ public class LoginDAO {
 
 	public LoginDAO()
 	{
-		arq = new File("senhas.txt");
+		arq = new File("ProjetoFinalGabrielBisso/senhas.txt");
 	}
 	
 	public boolean autentica(Login l)
