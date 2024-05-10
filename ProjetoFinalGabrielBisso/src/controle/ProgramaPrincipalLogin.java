@@ -5,9 +5,9 @@ import visao.JanelaLogin;
 
 public class ProgramaPrincipalLogin {
 	public static void main(String[] args) {
-		JanelaLogin j= new JanelaLogin();
-		j.setVisible(true);
+		JanelaLogin JanelaLog= new JanelaLogin();
+		JanelaLog.setVisible(true);
 		Login l = new Login();
-		ControleLogin conLog = new ControleLogin(j, l);
+		ControleLogin conLog = new ControleLogin(JanelaLog, l);
 	}
 }
