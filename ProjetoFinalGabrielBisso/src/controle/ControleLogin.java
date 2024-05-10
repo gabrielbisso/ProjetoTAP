@@ -3,6 +3,8 @@ package controle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JOptionPane;
+
 import dao.LoginDAO;
 import modelo.Login;
 import visao.JanelaLogin;
@@ -55,7 +57,7 @@ public class ControleLogin implements ActionListener{
 					{
 						if(logdao.autentica(log))
 						{
-							System.out.println("Autenticação realizada com sucesso!");
+							JOptionPane.showMessageDialog(jan, "Autenticação realizada com sucesso!");
 						}
 						else
 						{
