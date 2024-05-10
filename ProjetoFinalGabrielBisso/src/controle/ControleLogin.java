@@ -10,12 +10,12 @@ import modelo.Login;
 import visao.JanelaLogin;
 
 public class ControleLogin implements ActionListener{
-	private JanelaLogin jan;
+	private JanelaLogin JanelaLog;
 	private Login log;
 	private LoginDAO logdao;
 	
 	public ControleLogin(JanelaLogin jan, Login log) {
-		this.jan = jan;
+		this.JanelaLog = jan;
 		this.log = log;
 		logdao = new LoginDAO();
 		funcionaBotao();
@@ -23,8 +23,8 @@ public class ControleLogin implements ActionListener{
 
 
 	private void funcionaBotao(){
-		jan.getButtonAutenticar().addActionListener(this);
-		jan.getButtonLimpar().addActionListener(this);
+		JanelaLog.getButtonAutenticar().addActionListener(this);
+		JanelaLog.getButtonLimpar().addActionListener(this);
 	}
 
 
@@ -32,14 +32,14 @@ public class ControleLogin implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("Limpar"))
 		{
-			jan.limpadados();
+			JanelaLog.limpadados();
 		}
 		else
 		{
 			if(e.getActionCommand().equals("Autenticar"))
 			{
-				String nome = jan.getFieldUsuario().getText();
-				String senha = jan.getFieldSenha().getText();
+				String nome = JanelaLog.getFieldUsuario().getText();
+				String senha = JanelaLog.getFieldSenha().getText();
 				log.setUsuario(nome);
 				log.setSenha(senha);
 				
@@ -57,11 +57,11 @@ public class ControleLogin implements ActionListener{
 					{
 						if(logdao.autentica(log))
 						{
-							JOptionPane.showMessageDialog(jan, "Autenticação realizada com sucesso!");
+							JOptionPane.showMessageDialog(JanelaLog, "Autenticação realizada com sucesso!");
 						}
 						else
 						{
-							JOptionPane.showMessageDialog(jan, "Atenção: Erro na autenticação!");
+							JOptionPane.showMessageDialog(JanelaLog, "Atenção: Erro na autenticação!");
 						}
 					}
 				}
