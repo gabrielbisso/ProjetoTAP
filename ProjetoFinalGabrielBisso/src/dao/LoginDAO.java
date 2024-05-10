@@ -22,8 +22,8 @@ public class LoginDAO {
 		boolean verificador = false;
 		
 		try {
-			FileReader fr = new FileReader(Arquivo);
-			BufferedReader br = new BufferedReader(fr);
+			FileReader LeitorDoArquivo = new FileReader(Arquivo);
+			BufferedReader br = new BufferedReader(LeitorDoArquivo);
 			
 			String linha = null;
 			String[] campos = new String[2];
