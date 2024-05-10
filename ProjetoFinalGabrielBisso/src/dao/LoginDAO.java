@@ -23,13 +23,13 @@ public class LoginDAO {
 		
 		try {
 			FileReader LeitorDoArquivo = new FileReader(Arquivo);
-			BufferedReader br = new BufferedReader(LeitorDoArquivo);
+			BufferedReader BufferedReader = new BufferedReader(LeitorDoArquivo);
 			
 			String linha = null;
 			String[] campos = new String[2];
 			
 			try {
-				while((linha = br.readLine())!=null)
+				while((linha = BufferedReader.readLine())!=null)
 				{
 					campos = linha.split("#");
 					if(campos[0].equals(Login.getUsuario()))
