@@ -43,23 +43,23 @@ public class ControleLogin implements ActionListener{
 				
 				if(nome.equals(" "))
 				{
-					System.out.println("ERRO: nome não foi preenchido");
+					System.out.println("Atenção: Campo 'nome' não preenchido!");
 				}
 				else
 				{
 					if(senha.equals(" "))
 					{
-						System.out.println("ERRO: senha não foi preenchido");
+						System.out.println("Atenção: Campo 'senha' não prenchido!");
 					}
 					else
 					{
 						if(logdao.autentica(log))
 						{
-							System.out.println("Autenticação realizada com sucesso");
+							System.out.println("Autenticação realizada com sucesso!");
 						}
 						else
 						{
-							System.out.println("Falha na autenticação");
+							System.out.println("Atenção: Erro na autenticação!");
 						}
 					}
 				}
