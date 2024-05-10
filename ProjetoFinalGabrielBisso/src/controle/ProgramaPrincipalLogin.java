@@ -1,7 +1,7 @@
 package controle;
 
 import modelo.Login;
-import questao1.JanelaLogin;
+import visao.JanelaLogin;
 
 public class ProgramaPrincipalLogin {
 	public static void main(String[] args) {
