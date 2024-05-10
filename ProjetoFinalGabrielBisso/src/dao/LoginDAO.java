@@ -31,7 +31,7 @@ public class LoginDAO {
 			try {
 				while((linha = BufferedReader.readLine())!=null)
 				{
-					campos = linha.split("#");
+					campos = linha.split("#"); //Adiciona ao vetor cada componente em cada posição, sendo identificados e separados por uma #
 					if(campos[0].equals(Login.getUsuario()))
 					{
 						if(campos[1].equals(Login.getSenha()))
