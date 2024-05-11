@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.border.BevelBorder;
 import java.awt.Color;
+import java.awt.Dimension;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -56,7 +57,6 @@ public class JanelaLogin extends JFrame {
 		contentPane.add(panel, BorderLayout.SOUTH);
 		
 		buttonAutenticar = new JButton("Autenticar");
-		buttonAutenticar.setIcon(new ImageIcon(JanelaLogin.class.getResource("login.png")));
 		panel.add(buttonAutenticar);
 		
 		buttonLimpar = new JButton("Limpar");
