@@ -56,7 +56,7 @@ public class JanelaLogin extends JFrame {
 		contentPane.add(panel, BorderLayout.SOUTH);
 		
 		buttonAutenticar = new JButton("Autenticar");
-		buttonAutenticar.setIcon(new ImageIcon(JanelaLogin.class.getResource("login2.png")));
+		buttonAutenticar.setIcon(new ImageIcon(JanelaLogin.class.getResource("login.png")));
 		panel.add(buttonAutenticar);
 		
 		buttonLimpar = new JButton("Limpar");
