@@ -66,6 +66,7 @@ public class JanelaLogin extends JFrame {
 		
 		JLabel labelUsuario = new JLabel("Usuário");
 		labelUsuario.setFont(new Font("Tahoma", Font.BOLD, 25));
+		labelUsuario.setForeground(Color.decode("#D5E6C1"));
 		panel_1.add(labelUsuario);
 		
 		fieldUsuario = new JTextField();
@@ -74,6 +75,7 @@ public class JanelaLogin extends JFrame {
 		
 		JLabel labelSenha = new JLabel("Senha");
 		labelSenha.setFont(new Font("Tahoma", Font.BOLD, 25));
+		labelSenha.setForeground(Color.decode("#D5E6C1"));
 		panel_1.add(labelSenha);
 		
 		fieldSenha = new JTextField();
