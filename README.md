@@ -21,14 +21,11 @@
 
 ##### Técnicas Aplicadas:
 
-* GitHub
-Utilizei o GitHub para versionar o código. Cada alteração feita no projeto foi registrada por meio de commits, permitindo o acompanhamento da evolução do desenvolvimento, além de facilitar a comparação entre versões antigas e mais recentes do sistema.
+* GitHub: Utilizei o GitHub para versionar o código. Cada alteração feita no projeto foi registrada por meio de commits, permitindo o acompanhamento da evolução do desenvolvimento, além de facilitar a comparação entre versões antigas e mais recentes do sistema.
 
-* Arquitetura MVC
-Implementei a arquitetura Model-View-Controller (MVC) para separar as responsabilidades do sistema. Essa divisão melhora a organização do código, facilita a manutenção e permite um desenvolvimento mais modular e escalável.
+* Arquitetura MVC: Implementei a arquitetura Model-View-Controller (MVC) para separar as responsabilidades do sistema. Essa divisão melhora a organização do código, facilita a manutenção e permite um desenvolvimento mais modular e escalável.
 
-* Código Limpo
-Adotei os princípios de código limpo para garantir que o projeto fosse escrito de forma legível, organizada e padronizada. Isso facilita a compreensão por parte de outros desenvolvedores, além de tornar o processo de correção e atualização mais ágil e seguro.
+* Código Limpo: Adotei os princípios de código limpo para garantir que o projeto fosse escrito de forma legível, organizada e padronizada. Isso facilita a compreensão por parte de outros desenvolvedores, além de tornar o processo de correção e atualização mais ágil e seguro.
 
 ## Estrutura do Repositório
 <h3 id=Code>Code</h3>
